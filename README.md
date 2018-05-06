@@ -16,11 +16,9 @@ Add to ansible playbook following:
 
 params:
 
-- **drs_setup_user:** (yes/no) do setup additional user
-- [**drs_user:** (str)] create additional user with sudo
-- [**drs_pass:** (str)] new user passwords
-- [**def_user_key_file:**] (str) path to public key
-- [**drs_data_dir:**] (str) directory outside home that can be used by added user
+- **dr_name:** (str) service name
+- **dr_dir:** (str) path to deploy
+- **dr_repo:** (str) git repo
 
 ## Default parameters
 
