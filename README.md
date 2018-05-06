@@ -11,7 +11,7 @@ Add to ansible playbook following:
         dr_name: my-static
         dr_dir: '/srv/{{dr_name}}'
         dr_repo: https://github.com/myyyyyyy
-      tags: ['my-static']
+      tags: ['static']
       become: yes
 
 params:
