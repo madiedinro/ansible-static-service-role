@@ -1,0 +1,8 @@
+---
+- name: Cloning {{dr_name}} service
+  git:
+    repo: '{{dr_repo}}'
+    version: HEAD
+    force: yes
+    accept_hostkey: yes
+    dest: '{{dr_dir|default(dr_name)}}'

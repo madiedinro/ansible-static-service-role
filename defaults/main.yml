@@ -1,0 +1,3 @@
+dr_name: static-service
+dr_dir: '/srv/{{dr_name}}'
+dr_repo: https://github.com/madiedinro/fuck_lake
