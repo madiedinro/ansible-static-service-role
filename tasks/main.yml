@@ -1,4 +1,11 @@
 ---
+- name: "Creating directory if not exists"
+  file:
+    path: "{{dr_dir}}"
+    state: directory
+    mode: "{{dr_dir_mode}}"
+  when: 'dr_dir is defined'
+
 - name: Cloning {{dr_name}} service
   git:
     repo: '{{dr_repo}}'
